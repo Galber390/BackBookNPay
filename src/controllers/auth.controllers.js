@@ -87,7 +87,7 @@ const register = async (req, res) => {
         });
       }
   
-      // 3) Crear usuario en Supabase Auth (aquí vive la contraseña)
+      // 3) Crear usuario en Supabase Auth 
       const { data, error } = await supabase.auth.signUp({
         email,
         password,
